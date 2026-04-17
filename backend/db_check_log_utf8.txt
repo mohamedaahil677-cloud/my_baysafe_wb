@@ -1,0 +1,60 @@
+﻿python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python check_db.py > 
+db_check_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (Tra  
+  ceback (most recent ca   
+ ll last)::String) [],     
+RemoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+  File "C:\Users\acer\OneDr
+ive\Desktop\BaySafe DMS 
+Mini\backend\check_db.py", 
+line 2, in <module>
+    app = create_app()
+  File "C:\Users\acer\OneDr
+ive\Desktop\BaySafe DMS Min
+i\backend\app\__init__.py",
+ line 50, in create_app
+    app.register_blueprint(
+admin_bp, 
+url_prefix='/api/admin')
+    ~~~~~~~~~~~~~~~~~~~~~~^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^
+  File "C:\Users\acer\AppDa
+ta\Local\Python\pythoncore-
+3.14-64\Lib\site-packages\f
+lask\sansio\scaffold.py", 
+line 44, in wrapper_func
+    return f(self, *args, 
+**kwargs)
+  File "C:\Users\acer\AppDa
+ta\Local\Python\pythoncore-
+3.14-64\Lib\site-packages\f
+lask\sansio\app.py", line 
+597, in register_blueprint
+    
+blueprint.register(self, 
+options)
+    ~~~~~~~~~~~~~~~~~~^^^^^
+^^^^^^^^^^
+  File "C:\Users\acer\AppDa
+ta\Local\Python\pythoncore-
+3.14-64\Lib\site-packages\f
+lask\sansio\blueprints.py",
+ line 310, in register
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: The name 
+'admin' is already 
+registered for a different 
+blueprint. Use 'name=' to 
+provide a unique name.
